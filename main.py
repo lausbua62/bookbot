@@ -13,7 +13,8 @@ def main():
     print(get_num_words(path))
     print("--------- Character Count -------")
     for key, value in get_character_count(path).items():
-        print(f"{key}: {value}")
+        if key != " ":
+            print(f"{key}: {value}")
     #print(get_character_count(path))
     print("============= END ===============")
 
